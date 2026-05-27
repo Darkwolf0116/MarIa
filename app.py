@@ -1170,7 +1170,7 @@ def talleres_html():
                 <div style="text-align:center;">
                     <h3 style="font-size:1.5rem;font-weight:700;color:white;margin-bottom:1rem;">El Concepto Clave: Soluciones <span style="color:#a78bfa;">'No-Code'</span></h3>
                     <p style="font-size:1.125rem;color:#94a3b8;margin-bottom:2rem;">Si sabes dar una instrucción clara, sabes crear un agente de IA.</p>
-                    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;">
+                    <div style="display:grid;grid-template-columns:1fr;gap:1.5rem;" class="nocode-grid">
                         <div style="padding:1.5rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:1rem;">
                             <div style="width:3rem;height:3rem;margin:0 auto 1rem;background:linear-gradient(135deg,#8b5cf6,#a855f7);border-radius:0.75rem;display:flex;align-items:center;justify-content:center;"><span style="color:white;font-weight:700;">1</span></div>
                             <h4 style="font-weight:700;color:white;margin-bottom:0.5rem;">Instrucción Humana</h4>
@@ -1194,6 +1194,8 @@ def talleres_html():
     <style>
     .talleres-grid {{ grid-template-columns: 1fr !important; }}
     @media (min-width: 1024px) {{ .talleres-grid {{ grid-template-columns: 1fr 1fr !important; }} }}
+    .nocode-grid {{ grid-template-columns: 1fr !important; }}
+    @media (min-width: 640px) {{ .nocode-grid {{ grid-template-columns: 1fr 1fr 1fr !important; }} }}
     </style>
     """
 
