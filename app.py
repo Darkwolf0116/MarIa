@@ -485,32 +485,20 @@ def identidad_html():
                             <div style="padding:0.75rem;background:rgba(139,92,246,0.1);border-radius:0.75rem;">👤</div>
                             <div>
                                 <h3 style="font-size:1.25rem;font-weight:700;color:white;margin-bottom:0.5rem;">¿Quién es {_maria_sm}?</h3>
-                                <p style="color:#94a3b8;line-height:1.625;">{_maria_sm} es el cerebro estratégico y la cara amigable de nuestra política de IA. Es una niña de <strong style="color:#a78bfa;">8 a 10 años</strong>, curiosa, inteligente y dispuesta a ayudar.</p>
+                                <p style="color:#94a3b8;line-height:1.625;">{_maria_sm} es el cerebro estratégico y la cara amigable de nuestra política de IA que agiliza todo tipo de procesos para el MEN. Es una niña de <strong style="color:#a78bfa;">8 a 10 años</strong>, curiosa, inteligente y dispuesta a ayudar.</p>
                             </div>
                         </div>
                     </div>
                     <div style="display:flex;flex-direction:column;gap:1rem;">
-                        <h3 style="font-size:1.125rem;font-weight:700;color:white;display:flex;align-items:center;gap:0.5rem;">🎨 Elementos de Identidad</h3>
+                        <h3 style="font-size:1.125rem;font-weight:700;color:white;display:flex;align-items:center;gap:0.5rem;">⚡ Atributos de {_maria_sm}</h3>
                         <div style="display:flex;align-items:flex-start;gap:1rem;padding:1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.75rem;">
-                            <span style="display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;background:rgba(255,255,255,0.1);border-radius:0.5rem;font-size:0.875rem;font-weight:700;color:white;">01</span>
-                            <div><h4 style="font-weight:600;color:white;">Tipografía</h4><p style="font-size:0.875rem;color:#94a3b8;">Outfit extrabold. Color: Blanco Puro (#FFFFFF).</p></div>
+                            <span style="display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;background:rgba(139,92,246,0.1);border-radius:0.5rem;font-size:0.875rem;font-weight:700;color:#a78bfa;">01</span>
+                            <div><h4 style="font-weight:600;color:white;">Rapidez de niña genio</h4><p style="font-size:0.875rem;color:#94a3b8;">Con su rapidez de niña genio, MarIA lee y organiza documentos en segundos, reduciendo meses de espera a solo unos días para que los ciudadanos reciban su reconocimiento sin complicaciones.</p></div>
                         </div>
                         <div style="display:flex;align-items:flex-start;gap:1rem;padding:1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.75rem;">
-                            <span style="display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;background:rgba(192,38,211,0.1);border-radius:0.5rem;font-size:0.875rem;font-weight:700;color:#e879f9;">02</span>
-                            <div><h4 style="font-weight:600;color:white;">Color MarIA</h4><p style="font-size:0.875rem;color:#94a3b8;">Magenta Brillante (#F500F5). Sin espacio entre palabras.</p></div>
+                            <span style="display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;background:rgba(16,185,129,0.1);border-radius:0.5rem;font-size:0.875rem;font-weight:700;color:#34d399;">02</span>
+                            <div><h4 style="font-weight:600;color:white;">Honestidad y precisión</h4><p style="font-size:0.875rem;color:#94a3b8;">Como la más honesta de la clase, ella usa su precisión analítica para que los apoyos económicos lleguen de forma justa y sin errores a quienes más lo necesitan.</p></div>
                         </div>
-                        <div style="display:flex;align-items:flex-start;gap:1rem;padding:1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.75rem;">
-                            <span style="display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;background:rgba(245,158,11,0.1);border-radius:0.5rem;font-size:0.875rem;font-weight:700;color:#fbbf24;">03</span>
-                            <div><h4 style="font-weight:600;color:white;">Arco Dorado</h4><p style="font-size:0.875rem;color:#94a3b8;">Exclusivo sobre "IA". Grosor máximo 8px. Estructura de luna creciente.</p></div>
-                        </div>
-                    </div>
-                    <div style="padding:1.5rem;background:rgba(245,158,11,0.05);border:1px solid rgba(245,158,11,0.2);border-radius:1rem;">
-                        <h3 style="font-size:1.125rem;font-weight:700;color:white;display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem;">📄 Protocolo de Identidad</h3>
-                        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.75rem;">
-                            <li style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.875rem;color:#94a3b8;"><span style="color:#fbbf24;flex-shrink:0;">✨</span> Prohibido deformar, estirar o alterar proporciones.</li>
-                            <li style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.875rem;color:#94a3b8;"><span style="color:#fbbf24;flex-shrink:0;">✨</span> Respetar estrictamente la paleta institucional y márgenes de resguardo espacial.</li>
-                            <li style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.875rem;color:#94a3b8;"><span style="color:#fbbf24;flex-shrink:0;">✨</span> Mantener fondos de alto contraste (idealmente blancos o neutros limpios).</li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -632,39 +620,6 @@ def bienvenida_html():
     """
 
 
-def _build_circuito_card(num, title, subtitle, icon, start, end, bg, border):
-    """Construye una tarjeta de estación SIN f-string anidado."""
-    tpl = (
-        '<a href="#estaciones" style="position:relative;padding:1.5rem;border-radius:1rem;'
-        "border:1px solid BORDER;background:BG;text-decoration:none;backdrop-filter:blur(4px);"
-        'transition:all 0.5s;display:block;">'
-        '<div style="position:absolute;top:-0.75rem;left:-0.75rem;width:2.5rem;height:2.5rem;'
-        "border-radius:50%;background:linear-gradient(135deg,START,END);display:flex;"
-        "align-items:center;justify-content:center;font-weight:700;color:white;font-size:1.125rem;"
-        'box-shadow:0 10px 15px -3px rgba(0,0,0,0.3);">NUM</div>'
-        '<div style="padding-top:1rem;">'
-        '<div style="display:inline-flex;padding:0.75rem;border-radius:0.75rem;'
-        "background:linear-gradient(135deg,START,END);margin-bottom:1rem;"
-        'box-shadow:0 10px 15px -3px rgba(0,0,0,0.3);"><span style="font-size:1.5rem;">ICON</span></div>'
-        '<h3 style="font-size:1.25rem;font-weight:700;color:white;margin-bottom:0.5rem;">TITLE</h3>'
-        '<p style="font-size:0.875rem;color:#94a3b8;">SUBTITLE</p>'
-        '<div style="margin-top:1rem;display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:#64748b;">'
-        '<span style="padding:0.25rem 0.5rem;background:rgba(255,255,255,0.05);border-radius:0.375rem;">15 min</span>'
-        "<span>Rotaci\u00f3n activa</span>"
-        "</div></div></a>"
-    )
-    return (
-        tpl.replace("BORDER", border)
-        .replace("BG", bg)
-        .replace("START", start)
-        .replace("END", end)
-        .replace("NUM", num)
-        .replace("ICON", icon)
-        .replace("TITLE", title)
-        .replace("SUBTITLE", subtitle)
-    )
-
-
 def circuito_html():
     stations = [
         {
@@ -675,6 +630,7 @@ def circuito_html():
             "start": "#f59e0b",
             "end": "#facc15",
             "bg": "rgba(245,158,11,0.10)",
+            "aliado": "xertica",
             "border": "rgba(245,158,11,0.34)",
         },
         {
@@ -685,6 +641,7 @@ def circuito_html():
             "start": "#3b82f6",
             "end": "#22d3ee",
             "bg": "rgba(59,130,246,0.10)",
+            "aliado": "google",
             "border": "rgba(59,130,246,0.34)",
         },
         {
@@ -695,6 +652,7 @@ def circuito_html():
             "start": "#10b981",
             "end": "#14b8a6",
             "bg": "rgba(16,185,129,0.10)",
+            "aliado": "microsoft",
             "border": "rgba(16,185,129,0.34)",
         },
         {
@@ -705,6 +663,7 @@ def circuito_html():
             "start": "#8b5cf6",
             "end": "#a855f7",
             "bg": "rgba(139,92,246,0.10)",
+            "aliado": "xertica",
             "border": "rgba(139,92,246,0.34)",
         },
         {
@@ -715,6 +674,7 @@ def circuito_html():
             "start": "#d946ef",
             "end": "#ec4899",
             "bg": "rgba(217,70,239,0.10)",
+            "aliado": "notebooklm",
             "border": "rgba(217,70,239,0.34)",
         },
         {
@@ -725,22 +685,166 @@ def circuito_html():
             "start": "#f43f5e",
             "end": "#ef4444",
             "bg": "rgba(244,63,94,0.10)",
+            "aliado": "men",
             "border": "rgba(244,63,94,0.34)",
         },
     ]
-    cards = "".join(
-        _build_circuito_card(
-            s["num"],
-            s["title"],
-            s["subtitle"],
-            s["icon"],
-            s["start"],
-            s["end"],
-            s["bg"],
-            s["border"],
+    # SVG layout: viewBox 0 0 1000 660
+    positions = [
+        (150, 110),   # 1: Impacto IA
+        (500, 110),   # 2: Ecosistema Google
+        (850, 110),   # 3: Copilot Microsoft
+        (850, 500),   # 4: Creador de Agentes
+        (500, 500),   # 5: NotebookLM
+        (150, 500),   # 6: Estrategia MEN
+    ]
+    # gradient defs
+    defs_parts = []
+    for i, s in enumerate(stations):
+        defs_parts.append(
+            '<linearGradient id="sg' + str(i) + '" x1="0%" y1="0%" x2="100%" y2="100%">'
+            '<stop offset="0%" stop-color="' + s["start"] + '"/>'
+            '<stop offset="100%" stop-color="' + s["end"] + '"/>'
+            '</linearGradient>'
         )
-        for s in stations
+    defs_parts.append(
+        '<linearGradient id="sgm" x1="0%" y1="0%" x2="100%" y2="100%">'
+        '<stop offset="0%" stop-color="#7c3aed"/>'
+        '<stop offset="100%" stop-color="#2563eb"/>'
+        '</linearGradient>'
     )
+    defs_parts.append(
+        '<clipPath id="mc"><circle cx="500" cy="320" r="50"/></clipPath>'
+    )
+    defs_parts.append(
+        '<filter id="gf"><feGaussianBlur stdDeviation="10" result="b"/>'
+        '<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>'
+    )
+    defs_html = "".join(defs_parts)
+
+    # track paths
+    track = "M 150,110 L 850,110 C 850,200 700,280 500,320 C 600,370 700,420 850,500 L 150,500"
+    loop = "M 150,520 C 150,620 500,620 500,520"
+
+    # station groups
+    station_parts = []
+    for i, s in enumerate(stations):
+        cx, cy = positions[i]
+        gid = "sg" + str(i)
+        bcx = cx + 34
+        bcy = cy - 34
+
+        al = s["aliado"]
+        if al == "google":
+            brand = (
+                '<g transform="translate(' + str(cx - 18) + ',' + str(cy - 18) + ')">'
+                '<svg viewBox="0 0 24 24" width="36" height="36">'
+                '<circle cx="12" cy="12" r="11" fill="white"/>'
+                '<path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/>'
+                '<path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>'
+                '<path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>'
+                '<path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>'
+                '</svg></g>'
+            )
+        elif al == "microsoft":
+            brand = (
+                '<g transform="translate(' + str(cx - 18) + ',' + str(cy - 18) + ')">'
+                '<svg viewBox="0 0 24 24" width="36" height="36">'
+                '<rect x="2" y="2" width="9.5" height="9.5" fill="#F25022"/>'
+                '<rect x="12.5" y="2" width="9.5" height="9.5" fill="#7FBA00"/>'
+                '<rect x="2" y="12.5" width="9.5" height="9.5" fill="#00A4EF"/>'
+                '<rect x="12.5" y="12.5" width="9.5" height="9.5" fill="#FFB900"/>'
+                '</svg></g>'
+            )
+        elif al == "notebooklm":
+            brand = (
+                '<g transform="translate(' + str(cx - 18) + ',' + str(cy - 18) + ')">'
+                '<svg viewBox="0 0 24 24" width="36" height="36">'
+                '<rect x="3" y="2" width="18" height="20" rx="2" fill="#4285F4"/>'
+                '<rect x="5" y="4" width="14" height="16" rx="1" fill="white"/>'
+                '<path d="M16,16 L16,18 L8,18 L8,16 Z M16,12 L16,14 L8,14 L8,12 Z M16,8 L16,10 L8,10 L8,8 Z" fill="#4285F4" opacity="0.3"/>'
+                '<path d="M17,6.5 L18,8.5 L20,9 L18,9.5 L17,11.5 L16,9.5 L14,9 L16,8.5 Z" fill="#FACC15"/>'
+                '</svg></g>'
+            )
+        elif al == "men":
+            brand = (
+                '<g transform="translate(' + str(cx - 16) + ',' + str(cy - 18) + ')">'
+                '<svg viewBox="0 0 40 44" width="32" height="36">'
+                '<path d="M20,2 L36,10 L36,26 C36,36 20,42 20,42 C20,42 4,36 4,26 L4,10 Z" fill="#0A3D7B" stroke="#FFCC00" stroke-width="1.5"/>'
+                '<path d="M20,7 L34,14 L34,26 C34,34 20,38 20,38 C20,38 6,34 6,26 L6,14 Z" fill="white"/>'
+                '<text x="20" y="25" text-anchor="middle" font-size="11" font-weight="800" fill="#0A3D7B">MEN</text>'
+                '<text x="20" y="43" text-anchor="middle" font-size="5" font-weight="700" fill="#0A3D7B">EDUCACI\u00d3N</text>'
+                '</svg></g>'
+            )
+        else:
+            brand = (
+                '<g transform="translate(' + str(cx - 20) + ',' + str(cy - 10) + ')">'
+                '<svg viewBox="0 0 40 20" width="40" height="20">'
+                '<rect x="0" y="0" width="40" height="20" rx="4" fill="#6C5CE7"/>'
+                '<text x="20" y="13" text-anchor="middle" font-size="10" font-weight="800"'
+                ' fill="white" font-family="Arial,sans-serif">Xertica</text>'
+                '</svg></g>'
+            )
+
+        station_parts.append(
+            '<g>'
+            '<circle cx="' + str(cx) + '" cy="' + str(cy) + '" r="45" fill="rgba(255,255,255,0.06)"'
+            ' stroke="rgba(255,255,255,0.12)" stroke-width="2"/>'
+'<circle cx="' + str(bcx) + '" cy="' + str(bcy) + '" r="22" fill="white"'
+' stroke="' + s["start"] + '" stroke-width="2"/>'
+'<text x="' + str(bcx) + '" y="' + str(bcy + 1) + '" text-anchor="middle"'
+' dominant-baseline="central" font-size="20" font-weight="800" fill="' + s["start"] + '">'
+            + s["num"] + '</text>'
+'<text x="' + str(cx) + '" y="' + str(cy + 62) + '" text-anchor="middle"'
+            ' font-size="16" font-weight="600" fill="white">' + s["title"] + '</text>'
+            + brand
+            + '</g>'
+        )
+    stations_svg = "".join(station_parts)
+
+    # MarIA central
+    maria_svg = (
+        '<circle cx="500" cy="320" r="65" fill="rgba(255,255,255,0.08)" filter="url(#gf)"/>'
+        '<circle cx="500" cy="320" r="55" fill="rgba(255,255,255,0.10)"/>'
+        '<circle cx="500" cy="320" r="55" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>'
+        '<image href="' + MARIA_AVATAR + '" x="450" y="270" width="100" height="100"'
+        ' clip-path="url(#mc)" preserveAspectRatio="xMidYMid meet"/>'
+        '<text x="500" y="396" text-anchor="middle" font-size="18" font-weight="700" fill="rgba(255,255,255,0.8)">MarIA</text>'
+        '<text x="500" y="414" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.5)">▼ Avanzando</text>'
+    )
+
+    # directional arrows
+    arrows = (
+        '<path d="M294,103 L294,117 L312,110Z" fill="rgba(255,255,255,0.3)"/>'
+        '<path d="M694,103 L694,117 L712,110Z" fill="rgba(255,255,255,0.3)"/>'
+        '<path d="M734,203 L748,217 L734,217Z" fill="rgba(255,255,255,0.3)"/>'
+        '<path d="M694,413 L708,427 L694,427Z" fill="rgba(255,255,255,0.3)"/>'
+        '<path d="M306,493 L306,507 L288,500Z" fill="rgba(255,255,255,0.3)"/>'
+        '<path d="M706,493 L706,507 L688,500Z" fill="rgba(255,255,255,0.3)"/>'
+        '<path d="M319,588 L319,602 L337,595Z" fill="rgba(255,255,255,0.3)"/>'
+    )
+
+    svg = (
+        '<svg viewBox="0 0 1000 660"'
+        ' style="width:100%;max-width:1000px;height:auto;display:block;margin:0 auto;">'
+        '<defs>' + defs_html + '</defs>'
+        '<path d="' + track + '" fill="none" stroke="rgba(255,255,255,0.06)"'
+        ' stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>'
+        '<path d="' + track + '" fill="none" stroke="rgba(255,255,255,0.15)"'
+        ' stroke-width="40" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>'
+        '<path d="' + track + '" fill="none" stroke="rgba(255,255,255,0.25)"'
+        ' stroke-width="1.5" stroke-dasharray="6,6"/>'
+        '<path d="' + loop + '" fill="none" stroke="rgba(255,255,255,0.06)"'
+        ' stroke-width="38" stroke-linecap="round"/>'
+        '<path d="' + loop + '" fill="none" stroke="rgba(255,255,255,0.25)"'
+        ' stroke-width="1.5" stroke-dasharray="6,6"/>'
+        '<circle cx="500" cy="320" r="5" fill="rgba(255,255,255,0.4)"/>'
+        + stations_svg
+        + maria_svg
+        + arrows
+        + '</svg>'
+    )
+
     return f"""
     <section id="circuito" style="padding:6rem 0;position:relative;overflow:hidden;">
         <div style="position:absolute;inset:0;background:linear-gradient(to bottom,#0f0a1a,#100820,#0f0a1a);"></div>
@@ -752,9 +856,7 @@ def circuito_html():
                 <h2 style="font-size:2rem;font-weight:900;color:white;margin-bottom:1.5rem;" class="section-title">El Circuito de <span style="background:linear-gradient(to right,#a78bfa,#e879f9,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Aprendizaje</span></h2>
                 <p style="font-size:1.125rem;color:#94a3b8;max-width:42rem;margin:0 auto;">6 estaciones de inmersión práctica en IA, 15 minutos cada una</p>
             </div>
-            <div class="circuito-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
-                {cards}
-            </div>
+            {svg}
             <div style="margin-top:3rem;display:flex;justify-content:center;">
                 <div style="display:inline-flex;align-items:center;gap:0.75rem;padding:1rem 1.5rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:1rem;">
                     <div style="padding:0.5rem;background:rgba(59,130,246,0.1);border-radius:0.5rem;">📖</div>
@@ -766,11 +868,6 @@ def circuito_html():
             </div>
         </div>
     </section>
-    <style>
-    .circuito-grid {{ grid-template-columns: 1fr !important; }}
-    @media (min-width: 768px) {{ .circuito-grid {{ grid-template-columns: 1fr 1fr !important; }} }}
-    @media (min-width: 1200px) {{ .circuito-grid {{ grid-template-columns: 1fr 1fr 1fr !important; }} }}
-    </style>
     """
 
 
@@ -851,8 +948,8 @@ ESTACIONES_DATA = [
         "shortTitle": "Estrategia MEN",
         "aliado": "OTSI",
         "icon": "⛰",
-        "objetivo": "Aplicativos propietarios: Convalidaciones y Gratuidad.",
-        "foco": "El Cerebro Estratégico: Presentación oficial de MarIA como el motor de eficiencia del MEN.",
+        "objetivo": "El Cerebro Estratégico: Presentación oficial de MarIA como el motor de eficiencia del MEN.",
+        "foco": "Presentar la estrategia de IA del MEN, destacando MarIA como el núcleo de innovación y eficiencia para transformar la gestión pública educativa.",
         "quote": "No solo adoptamos herramientas externas; creamos nuestro propio ecosistema para transformar el Estado.",
         "color": "from-rose-500 to-red-400",
         "borderColor": "border-rose-500/20",
@@ -1080,8 +1177,13 @@ def talleres_html():
                     </div>
                     <div style="display:flex;flex-direction:column;align-items:center;gap:0.5rem;">
                         <span style="font-size:1.5rem;">💻</span>
-                        <span style="color:white;font-weight:600;">Bring Your Own Device</span>
+                        <span style="color:white;font-weight:600;">Trae tu propio dispositivo</span>
                         <span style="font-size:0.875rem;color:#94a3b8;">Hardware obligatorio</span>
+                    </div>
+                    <div style="display:flex;flex-direction:column;align-items:center;gap:0.5rem;grid-column:2;">
+                        <span style="font-size:1.5rem;">📅</span>
+                        <span style="color:white;font-weight:600;">Primeros dos talleres presenciales</span>
+                        <span style="font-size:0.875rem;color:#94a3b8;">Salas del primer piso</span>
                     </div>
                 </div>
             </div>
@@ -1200,55 +1302,6 @@ def talleres_html():
     """
 
 
-def articulacion_html():
-    return f"""
-    <section id="articulacion" style="padding:6rem 0;position:relative;overflow:hidden;">
-        <div style="position:absolute;inset:0;background:linear-gradient(to bottom,#0f0a1a,#120d20,#0f0a1a);"></div>
-        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:500px;background:rgba(139,92,246,0.05);border-radius:50%;filter:blur(150px);"></div>
-        <div class="max-w-7xl" style="position:relative;z-index:10;">
-            <div style="text-align:center;margin-bottom:4rem;">
-                <img src="{LOGO}" alt="MEN" style="height:4rem;margin:0 auto 1.5rem;opacity:0.8;" />
-                <span style="display:inline-block;padding:0.375rem 1rem;background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.3);border-radius:9999px;font-size:0.875rem;font-weight:500;color:#c4b5fd;margin-bottom:1rem;">Articulación Institucional</span>
-                <h2 style="font-size:2rem;font-weight:900;color:white;margin-bottom:1.5rem;" class="section-title">Próximos <span class="text-gradient-violet">Pasos</span></h2>
-            </div>
-            <div style="display:grid;grid-template-columns:1fr;gap:2rem;margin-bottom:3rem;" class="lg-grid-2">
-                <div style="padding:2rem;border-radius:1.5rem;background:linear-gradient(135deg,rgba(139,92,246,0.2),rgba(37,99,235,0.1));border:1px solid rgba(139,92,246,0.2);backdrop-filter:blur(4px);">
-                    <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem;">
-                        <div style="padding:1rem;background:linear-gradient(135deg,#8b5cf6,#a855f7);border-radius:1rem;box-shadow:0 10px 15px -3px rgba(0,0,0,0.3);">⚙</div>
-                        <div>
-                            <h3 style="font-size:1.5rem;font-weight:700;color:white;margin-bottom:0.5rem;">Soporte Técnico</h3>
-                            <p style="color:#94a3b8;">Soporte total de infraestructura y tecnología garantizado por <strong style="color:#a78bfa;">XERTICA</strong></p>
-                        </div>
-                    </div>
-                    <div style="padding:1rem;background:rgba(255,255,255,0.05);border-radius:0.75rem;border:1px solid rgba(255,255,255,0.1);">
-                        <p style="font-size:0.875rem;color:#94a3b8;">Especial foco en estaciones de impacto <strong style="color:#a78bfa;">#1 (Impacto IA)</strong> y <strong style="color:#fb7185;">#6 (Estrategia MEN)</strong></p>
-                    </div>
-                </div>
-                <div style="padding:2rem;border-radius:1.5rem;background:linear-gradient(135deg,rgba(37,99,235,0.2),rgba(139,92,246,0.1));border:1px solid rgba(59,130,246,0.2);backdrop-filter:blur(4px);">
-                    <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem;">
-                        <div style="padding:1rem;background:linear-gradient(135deg,#3b82f6,#22d3ee);border-radius:1rem;box-shadow:0 10px 15px -3px rgba(0,0,0,0.3);">🧩</div>
-                        <div>
-                            <h3 style="font-size:1.5rem;font-weight:700;color:white;margin-bottom:0.5rem;">Sinergia MEN</h3>
-                            <p style="color:#94a3b8;">Operación coordinada entre todas las dependencias</p>
-                        </div>
-                    </div>
-                    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
-                        <span style="padding:0.5rem 1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.5rem;font-size:0.875rem;font-weight:600;color:#93c5fd;">SG</span>
-                        <span style="padding:0.5rem 1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.5rem;font-size:0.875rem;font-weight:600;color:#93c5fd;">SDO</span>
-                        <span style="padding:0.5rem 1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.5rem;font-size:0.875rem;font-weight:600;color:#93c5fd;">OAC</span>
-                        <span style="padding:0.5rem 1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.5rem;font-size:0.875rem;font-weight:600;color:#93c5fd;">OTSI</span>
-                        <span style="padding:0.5rem 1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.5rem;font-size:0.875rem;font-weight:600;color:#93c5fd;">SRC</span>
-                    </div>
-                </div>
-            </div>
-            <div style="text-align:center;padding:1.5rem 2rem;">
-                <p style="color:#cbd5e1;font-style:italic;font-size:1.125rem;">💬 "El cambio cultural comienza aquí. ¡Con MarIA, tú solo confía!"</p>
-            </div>
-        </div>
-    </section>
-    """
-
-
 def footer_html():
     _maria_footer = maria_logo_html("1.875rem")
     return f"""
@@ -1338,95 +1391,7 @@ _nth_css = "".join(
     "box-shadow:0 4px 15px " + _cs + "55!important;}"
     for _ci, (_cs, _ce) in enumerate(_TAB_COLORS)
 )
-# --- CONCEPTOS CLAVE (NO-CODE) ---
-st.markdown(
-    """
-    <style>
-    .main-container {
-        display: flex;
-        flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente línea en móvil */
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-        width: 100%;
-    }
-    .card {
-        background-color: rgba(255, 255, 255, 0.05);
-        border-radius: 15px;
-        padding: 30px;
-        text-align: center;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        transition: transform 0.3s ease;
-        /* Cambio clave: flex-basis controla el ancho de forma inteligente */
-        flex: 1 1 300px; 
-        max-width: 350px;
-        min-width: 280px;
-        box-sizing: border-box;
-    }
-    .card:hover {
-        transform: translateY(-10px);
-        background-color: rgba(255, 255, 255, 0.1);
-    }
-    .icon-container {
-        width: 60px;
-        height: 60px;
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 20px;
-        font-weight: bold;
-        color: white;
-        font-size: 20px;
-    }
-    .step-1 { background: linear-gradient(135deg, #a855f7, #7c3aed); }
-    .step-2 { background: linear-gradient(135deg, #3b82f6, #2563eb); }
-    .step-3 { background: linear-gradient(135deg, #ec4899, #db2777); }
-    
-    .card h3 {
-        color: white;
-        margin-bottom: 15px;
-        font-size: 1.5rem;
-    }
-    .card p {
-        color: #94a3b8;
-        line-height: 1.6;
-        font-size: 0.95rem;
-    }
 
-    /* Media Query para pantallas muy pequeñas */
-    @media (max-width: 480px) {
-        .main-container {
-            padding: 10px;
-            gap: 15px;
-        }
-        .card {
-            flex: 1 1 100%; /* Ocupa todo el ancho en celulares pequeños */
-            padding: 20px;
-        }
-    }
-    </style>
-    
-    <div class="main-container">
-        <div class="card">
-            <div class="icon-container step-1">1</div>
-            <h3>Instrucción Humana</h3>
-            <p>El funcionario escribe un reto en lenguaje natural</p>
-        </div>
-        <div class="card">
-            <div class="icon-container step-2">2</div>
-            <h3>El Motor Lógico (AI Studio)</h3>
-            <p>La plataforma estructura la solución automáticamente</p>
-        </div>
-        <div class="card">
-            <div class="icon-container step-3">3</div>
-            <h3>El Agente Funcional</h3>
-            <p>Un aplicativo listo para ejecutar la tarea de forma autónoma</p>
-        </div>
-    </div>
-""",
-    unsafe_allow_html=True,
-)
 
 # 3. Pestañas: botones nativos Streamlit — clic dispara rerun directamente, sin JS
 _tab_cols = st.columns(6)
@@ -1454,5 +1419,4 @@ st.markdown(
 # ────────────────────────────────────────────────────────────────────────────
 
 st.markdown(talleres_html(), unsafe_allow_html=True)
-st.markdown(articulacion_html(), unsafe_allow_html=True)
 st.markdown(footer_html(), unsafe_allow_html=True)
