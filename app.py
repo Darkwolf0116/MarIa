@@ -1338,29 +1338,93 @@ _nth_css = "".join(
     "box-shadow:0 4px 15px " + _cs + "55!important;}"
     for _ci, (_cs, _ce) in enumerate(_TAB_COLORS)
 )
+# --- CONCEPTOS CLAVE (NO-CODE) ---
 st.markdown(
-    "<style>"
-    "div[data-testid='stHorizontalBlock']{"
-    "flex-wrap:wrap!important;gap:0.5rem!important;justify-content:center!important;"
-    "padding:1rem!important;background:rgba(255,255,255,0.03)!important;"
-    "border:1px solid rgba(255,255,255,0.08)!important;border-radius:1rem!important;"
-    "margin:0 0 2rem!important;}"
-    "div[data-testid='stHorizontalBlock'] button[kind='secondary']{"
-    "border-radius:9999px!important;padding:0.55rem 0.9rem!important;"
-    "font-size:0.8rem!important;font-weight:500!important;"
-    "background:rgba(255,255,255,0.05)!important;"
-    "border:1px solid rgba(255,255,255,0.1)!important;"
-    "color:#94a3b8!important;white-space:nowrap!important;"
-    "width:100%!important;min-height:unset!important;line-height:1.2!important;"
-    "transition:all 0.3s!important;}"
-    "div[data-testid='stHorizontalBlock'] button[kind='secondary']:hover{"
-    "background:rgba(255,255,255,0.12)!important;color:white!important;"
-    "border-color:rgba(255,255,255,0.25)!important;}"
-    "div[data-testid='stHorizontalBlock'] button[kind='primary']{"
-    "border-radius:9999px!important;padding:0.55rem 0.9rem!important;"
-    "font-size:0.8rem!important;font-weight:700!important;color:white!important;"
-    "white-space:nowrap!important;width:100%!important;"
-    "min-height:unset!important;line-height:1.2!important;}" + _nth_css + "</style>",
+    """
+    <style>
+    .main-container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente línea en móvil */
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+    .card {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s ease;
+        /* Cambio clave: flex-basis controla el ancho de forma inteligente */
+        flex: 1 1 300px; 
+        max-width: 350px;
+        min-width: 280px;
+        box-sizing: border-box;
+    }
+    .card:hover {
+        transform: translateY(-10px);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .icon-container {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+    }
+    .step-1 { background: linear-gradient(135deg, #a855f7, #7c3aed); }
+    .step-2 { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+    .step-3 { background: linear-gradient(135deg, #ec4899, #db2777); }
+    
+    .card h3 {
+        color: white;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+    }
+    .card p {
+        color: #94a3b8;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+
+    /* Media Query para pantallas muy pequeñas */
+    @media (max-width: 480px) {
+        .main-container {
+            padding: 10px;
+            gap: 15px;
+        }
+        .card {
+            flex: 1 1 100%; /* Ocupa todo el ancho en celulares pequeños */
+            padding: 20px;
+        }
+    }
+    </style>
+    
+    <div class="main-container">
+        <div class="card">
+            <div class="icon-container step-1">1</div>
+            <h3>Instrucción Humana</h3>
+            <p>El funcionario escribe un reto en lenguaje natural</p>
+        </div>
+        <div class="card">
+            <div class="icon-container step-2">2</div>
+            <h3>El Motor Lógico (AI Studio)</h3>
+            <p>La plataforma estructura la solución automáticamente</p>
+        </div>
+        <div class="card">
+            <div class="icon-container step-3">3</div>
+            <h3>El Agente Funcional</h3>
+            <p>Un aplicativo listo para ejecutar la tarea de forma autónoma</p>
+        </div>
+    </div>
+""",
     unsafe_allow_html=True,
 )
 
