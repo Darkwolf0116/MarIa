@@ -553,21 +553,11 @@ def arquitectura_html():
                         <li style="display:flex;align-items:flex-start;gap:0.5rem;font-size:0.875rem;color:#94a3b8;"><span style="width:0.375rem;height:0.375rem;border-radius:50%;background:linear-gradient(to right,#d946ef,#ec4899);margin-top:0.375rem;flex-shrink:0;"></span> 27 de Mayo</li>
                     </ul>
                 </div>
-                <div style="padding:1.5rem;border-radius:1rem;border:1px solid rgba(245,158,11,0.2);background:rgba(245,158,11,0.05);backdrop-filter:blur(4px);transition:all 0.5s;">
-                    <div style="display:inline-flex;padding:0.75rem;border-radius:0.75rem;background:linear-gradient(135deg,#f59e0b,#eab308);margin-bottom:1.25rem;box-shadow:0 10px 15px -3px rgba(0,0,0,0.3);">🎧</div>
-                    <h3 style="font-size:1.25rem;font-weight:700;color:white;margin-bottom:1rem;">Soporte Tecnológico</h3>
-                    <ul style="list-style:none;display:flex;flex-direction:column;gap:0.625rem;">
-                        <li style="display:flex;align-items:flex-start;gap:0.5rem;font-size:0.875rem;color:#94a3b8;"><span style="width:0.375rem;height:0.375rem;border-radius:50%;background:linear-gradient(to right,#f59e0b,#eab308);margin-top:0.375rem;flex-shrink:0;"></span> Infraestructura garantizada</li>
-                        <li style="display:flex;align-items:flex-start;gap:0.5rem;font-size:0.875rem;color:#94a3b8;"><span style="width:0.375rem;height:0.375rem;border-radius:50%;background:linear-gradient(to right,#f59e0b,#eab308);margin-top:0.375rem;flex-shrink:0;"></span> Pantallas táctiles, sonido, luces</li>
-                        <li style="display:flex;align-items:flex-start;gap:0.5rem;font-size:0.875rem;color:#94a3b8;"><span style="width:0.375rem;height:0.375rem;border-radius:50%;background:linear-gradient(to right,#f59e0b,#eab308);margin-top:0.375rem;flex-shrink:0;"></span> Por XERTICA</li>
-                        <li style="display:flex;align-items:flex-start;gap:0.5rem;font-size:0.875rem;color:#94a3b8;"><span style="width:0.375rem;height:0.375rem;border-radius:50%;background:linear-gradient(to right,#f59e0b,#eab308);margin-top:0.375rem;flex-shrink:0;"></span> Estaciones #1 y #6</li>
-                    </ul>
-                </div>
             </div>
     </section>
     <style>
     .arq-grid {{ grid-template-columns: 1fr 1fr !important; }}
-    @media (min-width: 1024px) {{ .arq-grid {{ grid-template-columns: 1fr 1fr 1fr 1fr !important; }} }}
+    @media (min-width: 1024px) {{ .arq-grid {{ grid-template-columns: 1fr 1fr 1fr !important; }} }}
     </style>
     """
 
