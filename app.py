@@ -3,7 +3,7 @@ import base64
 import json
 from datetime import datetime
 from pathlib import Path
-from supabase import create_client, Client
+from postgrest import SyncPostgrestClient
 
 st.set_page_config(
     page_title="Feria Digital: El Parche de MarIA",
@@ -11,12 +11,15 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-# ── Database (Supabase) ──
+# ── Database (Supabase via postgrest) ──
 @st.cache_resource
-def get_supabase() -> Client:
-    return create_client(
-        st.secrets["SUPABASE_URL"],
-        st.secrets["SUPABASE_KEY"]
+def get_supabase() -> SyncPostgrestClient:
+    return SyncPostgrestClient(
+        f"{st.secrets['SUPABASE_URL']}/rest/v1",
+        headers={
+            "apiKey": st.secrets["SUPABASE_KEY"],
+            "Authorization": f"Bearer {st.secrets['SUPABASE_KEY']}",
+        },
     )
 
 
