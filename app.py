@@ -1,9 +1,9 @@
 import streamlit as st
 import base64
-import sqlite3
 import json
 from datetime import datetime
 from pathlib import Path
+from supabase import create_client, Client
 
 st.set_page_config(
     page_title="Feria Digital: El Parche de MarIA",
@@ -11,30 +11,13 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-# ── Trivia DB ──
-conn = sqlite3.connect("trivia.db")
-conn.execute("""
-    CREATE TABLE IF NOT EXISTS respuestas (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        nombre TEXT NOT NULL,
-        email TEXT NOT NULL,
-        respuestas TEXT NOT NULL,
-        puntaje INTEGER NOT NULL,
-        total INTEGER NOT NULL,
-        timestamp TEXT NOT NULL
+# ── Database (Supabase) ──
+@st.cache_resource
+def get_supabase() -> Client:
+    return create_client(
+        st.secrets["SUPABASE_URL"],
+        st.secrets["SUPABASE_KEY"]
     )
-""")
-conn.execute("""
-    CREATE TABLE IF NOT EXISTS opiniones (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        nombre TEXT NOT NULL,
-        email TEXT NOT NULL,
-        calificaciones TEXT NOT NULL,
-        timestamp TEXT NOT NULL
-    )
-""")
-conn.commit()
-conn.close()
 
 
 def img_to_base64(path):
@@ -1572,28 +1555,20 @@ if st.button("Enviar opiniones", key="opinion_submit", type="primary", use_conta
     if not nombre or not email:
         st.warning("Por favor completa todos los campos obligatorios.")
     else:
-        conn = sqlite3.connect("trivia.db")
-        ya_participo = conn.execute(
-            "SELECT COUNT(*) FROM opiniones WHERE email = ?", (email,)
-        ).fetchone()[0] > 0
-        if ya_participo:
+        supabase = get_supabase()
+        result = supabase.table("opiniones").select("id").eq("email", email).execute()
+        if result.data:
             st.warning("Lo sentimos, ya lo intentaste")
         else:
-            conn.execute(
-                "INSERT INTO opiniones (nombre,email,calificaciones,timestamp)"
-                " VALUES (?,?,?,?)",
-                (
-                    nombre,
-                    email,
-                    json.dumps(calificaciones),
-                    datetime.now().isoformat(),
-                ),
-            )
-            conn.commit()
+            supabase.table("opiniones").insert({
+                "nombre": nombre,
+                "email": email,
+                "calificaciones": calificaciones,
+                "timestamp": datetime.now().isoformat(),
+            }).execute()
             st.balloons()
             st.success(
                 f"¡Gracias {nombre}! Tus opiniones han sido registradas. "
                 "Participas por increíbles premios. "
                 "¡Preséntate en la mesa de atención al finalizar el recorrido!"
             )
-        conn.close()
