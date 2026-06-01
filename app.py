@@ -1,5 +1,8 @@
 import streamlit as st
 import base64
+import sqlite3
+import json
+from datetime import datetime
 from pathlib import Path
 
 st.set_page_config(
@@ -7,6 +10,31 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed",
 )
+
+# ── Trivia DB ──
+conn = sqlite3.connect("trivia.db")
+conn.execute("""
+    CREATE TABLE IF NOT EXISTS respuestas (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        nombre TEXT NOT NULL,
+        email TEXT NOT NULL,
+        respuestas TEXT NOT NULL,
+        puntaje INTEGER NOT NULL,
+        total INTEGER NOT NULL,
+        timestamp TEXT NOT NULL
+    )
+""")
+conn.execute("""
+    CREATE TABLE IF NOT EXISTS opiniones (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        nombre TEXT NOT NULL,
+        email TEXT NOT NULL,
+        calificaciones TEXT NOT NULL,
+        timestamp TEXT NOT NULL
+    )
+""")
+conn.commit()
+conn.close()
 
 
 def img_to_base64(path):
@@ -1350,6 +1378,9 @@ def footer_html():
     """
 
 
+
+
+
 st.markdown(CSS, unsafe_allow_html=True)
 
 # ── session_state para la estación activa ────────────────────────────────────
@@ -1417,3 +1448,152 @@ st.markdown(
 
 st.markdown(talleres_html(), unsafe_allow_html=True)
 st.markdown(footer_html(), unsafe_allow_html=True)
+
+# ── Opiniones Section ────────────────────────────────────────
+st.markdown("""
+<section style="padding:4rem 0;background:#0a0612;">
+<div class="max-w-7xl" style="max-width:1280px;margin:0 auto;padding:0 2rem;">
+    <div style="text-align:center;margin-bottom:2rem;">
+        <span style="display:inline-block;padding:0.375rem 1rem;background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.3);border-radius:9999px;font-size:0.875rem;font-weight:500;color:#c4b5fd;margin-bottom:1rem;">✍️ Tu voz importa</span>
+        <h2 style="font-size:2rem;font-weight:900;color:white;">Danos tu opinión y participa por increíbles premios</h2>
+        <p style="color:#94a3b8;max-width:36rem;margin:0.5rem auto 0;">Califica cada estación y déjanos tu comentario</p>
+    </div>
+</div>
+</section>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+.opinion-card {
+    background: rgba(255,255,255,0.02) !important;
+    border-radius: 0.75rem !important;
+    padding: 1.25rem 1.5rem !important;
+    margin-bottom: 1rem !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+}
+.opinion-card .estacion-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+.opinion-card .estacion-icon {
+    font-size: 1.75rem;
+    line-height: 1;
+}
+.stTextInput input {
+    background: rgba(255,255,255,0.05) !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    color: white !important;
+    border-radius: 0.5rem !important;
+    padding: 0.625rem 0.875rem !important;
+    font-size: 0.9375rem !important;
+}
+.stTextInput input:focus {
+    border-color: #7c3aed !important;
+    box-shadow: 0 0 0 2px rgba(124,58,237,0.2) !important;
+}
+.stTextInput label {
+    color: #e2e8f0 !important;
+    font-weight: 600 !important;
+    font-size: 0.9375rem !important;
+}
+.stTextArea textarea {
+    background: rgba(255,255,255,0.05) !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    color: white !important;
+    border-radius: 0.5rem !important;
+    font-size: 0.9375rem !important;
+    min-height: 5rem !important;
+}
+.stTextArea textarea:focus {
+    border-color: #7c3aed !important;
+    box-shadow: 0 0 0 2px rgba(124,58,237,0.2) !important;
+}
+.stTextArea label {
+    color: #e2e8f0 !important;
+    font-weight: 500 !important;
+    font-size: 0.875rem !important;
+}
+button[kind="primary"] {
+    background: linear-gradient(135deg, #7c3aed, #2563eb) !important;
+    border: none !important;
+    border-radius: 0.75rem !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    padding: 0.75rem 2rem !important;
+    color: white !important;
+    transition: all 0.3s !important;
+    box-shadow: 0 4px 15px rgba(124,58,237,0.3) !important;
+}
+button[kind="primary"]:hover {
+    box-shadow: 0 6px 25px rgba(124,58,237,0.5) !important;
+    transform: translateY(-1px) !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+col1, col2 = st.columns(2)
+with col1:
+    nombre = st.text_input("Nombre completo", placeholder="Ej: Juan Pérez", key="opinion_nombre")
+with col2:
+    email = st.text_input("Correo electrónico", placeholder="Ej: juan@ejemplo.com", key="opinion_email")
+
+st.markdown("---")
+
+calificaciones = []
+for i, est in enumerate(ESTACIONES_DATA):
+    color = est["textColor"]
+    st.markdown(
+        f'<div class="opinion-card" style="border-left:4px solid {color};">'
+        f'<div class="estacion-header">'
+        f'<span class="estacion-icon">{est["icon"]}</span>'
+        f'<span class="estacion-title" style="color:{color};font-weight:700;font-size:1.125rem;">'
+        f'Estación {est["number"]}: {est["title"]}</span>'
+        f'</div></div>',
+        unsafe_allow_html=True,
+    )
+    rating = st.select_slider(
+        "Calificación",
+        options=[1, 2, 3, 4, 5],
+        value=3,
+        format_func=lambda x: "⭐" * x,
+        key=f"opinion_rating_{i}",
+    )
+    comentario = st.text_area(
+        "¿Qué te pareció esta estación?",
+        placeholder="Escribe tu opinión aquí...",
+        key=f"opinion_comentario_{i}",
+    )
+    calificaciones.append({"rating": rating, "comentario": comentario})
+
+st.markdown("---")
+if st.button("Enviar opiniones", key="opinion_submit", type="primary", use_container_width=True):
+    if not nombre or not email:
+        st.warning("Por favor completa todos los campos obligatorios.")
+    else:
+        conn = sqlite3.connect("trivia.db")
+        ya_participo = conn.execute(
+            "SELECT COUNT(*) FROM opiniones WHERE email = ?", (email,)
+        ).fetchone()[0] > 0
+        if ya_participo:
+            st.warning("Lo sentimos, ya lo intentaste")
+        else:
+            conn.execute(
+                "INSERT INTO opiniones (nombre,email,calificaciones,timestamp)"
+                " VALUES (?,?,?,?)",
+                (
+                    nombre,
+                    email,
+                    json.dumps(calificaciones),
+                    datetime.now().isoformat(),
+                ),
+            )
+            conn.commit()
+            st.balloons()
+            st.success(
+                f"¡Gracias {nombre}! Tus opiniones han sido registradas. "
+                "Participas por increíbles premios. "
+                "¡Preséntate en la mesa de atención al finalizar el recorrido!"
+            )
+        conn.close()

@@ -1,7 +1,7 @@
 .PHONY: run install add lock clean
 
 run:
-	uv run streamlit run app.py
+	uv run python -m streamlit run app.py
 
 install:
 	uv sync
