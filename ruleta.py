@@ -33,16 +33,26 @@ h1, h2, h3 { text-align: center; }
     width: 100%; height: 100%;
     animation: particleFloat 30s infinite linear;
     background:
-        radial-gradient(3px 3px at 10% 20%, rgba(167,139,250,0.6), transparent),
-        radial-gradient(4px 4px at 25% 55%, rgba(34,211,238,0.5), transparent),
-        radial-gradient(2px 2px at 40% 10%, rgba(245,158,11,0.5), transparent),
-        radial-gradient(3px 3px at 55% 70%, rgba(34,211,238,0.6), transparent),
-        radial-gradient(5px 5px at 70% 30%, rgba(167,139,250,0.4), transparent),
-        radial-gradient(2px 2px at 85% 85%, rgba(239,68,68,0.5), transparent),
-        radial-gradient(4px 4px at 15% 90%, rgba(245,158,11,0.4), transparent),
-        radial-gradient(3px 3px at 90% 10%, rgba(34,211,238,0.5), transparent),
-        radial-gradient(2px 2px at 50% 40%, rgba(167,139,250,0.5), transparent),
-        radial-gradient(3px 3px at 30% 80%, rgba(239,68,68,0.4), transparent);
+        radial-gradient(3px 3px at 10% 20%, rgba(167,139,250,0.7), transparent),
+        radial-gradient(4px 4px at 25% 55%, rgba(34,211,238,0.6), transparent),
+        radial-gradient(2px 2px at 40% 10%, rgba(245,158,11,0.6), transparent),
+        radial-gradient(3px 3px at 55% 70%, rgba(34,211,238,0.7), transparent),
+        radial-gradient(5px 5px at 70% 30%, rgba(167,139,250,0.5), transparent),
+        radial-gradient(2px 2px at 85% 85%, rgba(239,68,68,0.6), transparent),
+        radial-gradient(4px 4px at 15% 90%, rgba(245,158,11,0.5), transparent),
+        radial-gradient(3px 3px at 90% 10%, rgba(34,211,238,0.6), transparent),
+        radial-gradient(2px 2px at 50% 40%, rgba(167,139,250,0.6), transparent),
+        radial-gradient(3px 3px at 30% 80%, rgba(239,68,68,0.5), transparent),
+        radial-gradient(4px 4px at 5% 60%, rgba(34,211,238,0.5), transparent),
+        radial-gradient(3px 3px at 75% 15%, rgba(245,158,11,0.5), transparent),
+        radial-gradient(2px 2px at 60% 50%, rgba(167,139,250,0.6), transparent),
+        radial-gradient(3px 3px at 45% 90%, rgba(239,68,68,0.5), transparent),
+        radial-gradient(4px 4px at 20% 40%, rgba(34,211,238,0.6), transparent),
+        radial-gradient(2px 2px at 95% 70%, rgba(245,158,11,0.5), transparent),
+        radial-gradient(3px 3px at 10% 50%, rgba(167,139,250,0.5), transparent),
+        radial-gradient(5px 5px at 80% 80%, rgba(34,211,238,0.5), transparent),
+        radial-gradient(2px 2px at 35% 30%, rgba(239,68,68,0.5), transparent),
+        radial-gradient(3px 3px at 65% 5%, rgba(245,158,11,0.6), transparent);
 }
 #particles::after {
     content: '';
@@ -50,19 +60,29 @@ h1, h2, h3 { text-align: center; }
     width: 100%; height: 100%;
     animation: particleFloat 40s infinite linear reverse;
     background:
-        radial-gradient(2px 2px at 5% 45%, rgba(245,158,11,0.5), transparent),
-        radial-gradient(4px 4px at 45% 15%, rgba(167,139,250,0.4), transparent),
-        radial-gradient(3px 3px at 65% 60%, rgba(34,211,238,0.5), transparent),
-        radial-gradient(2px 2px at 80% 5%, rgba(239,68,68,0.4), transparent),
-        radial-gradient(3px 3px at 95% 40%, rgba(167,139,250,0.5), transparent),
-        radial-gradient(4px 4px at 20% 30%, rgba(245,158,11,0.4), transparent),
-        radial-gradient(2px 2px at 60% 90%, rgba(34,211,238,0.5), transparent),
-        radial-gradient(3px 3px at 35% 50%, rgba(239,68,68,0.3), transparent);
+        radial-gradient(2px 2px at 5% 45%, rgba(245,158,11,0.6), transparent),
+        radial-gradient(4px 4px at 45% 15%, rgba(167,139,250,0.5), transparent),
+        radial-gradient(3px 3px at 65% 60%, rgba(34,211,238,0.6), transparent),
+        radial-gradient(2px 2px at 80% 5%, rgba(239,68,68,0.5), transparent),
+        radial-gradient(3px 3px at 95% 40%, rgba(167,139,250,0.6), transparent),
+        radial-gradient(4px 4px at 20% 30%, rgba(245,158,11,0.5), transparent),
+        radial-gradient(2px 2px at 60% 90%, rgba(34,211,238,0.6), transparent),
+        radial-gradient(3px 3px at 35% 50%, rgba(239,68,68,0.4), transparent),
+        radial-gradient(4px 4px at 15% 25%, rgba(245,158,11,0.5), transparent),
+        radial-gradient(2px 2px at 50% 75%, rgba(167,139,250,0.5), transparent),
+        radial-gradient(3px 3px at 75% 45%, rgba(34,211,238,0.5), transparent),
+        radial-gradient(2px 2px at 25% 5%, rgba(239,68,68,0.5), transparent),
+        radial-gradient(4px 4px at 88% 55%, rgba(245,158,11,0.5), transparent),
+        radial-gradient(3px 3px at 40% 65%, rgba(167,139,250,0.5), transparent),
+        radial-gradient(2px 2px at 70% 10%, rgba(34,211,238,0.5), transparent),
+        radial-gradient(3px 3px at 10% 85%, rgba(239,68,68,0.4), transparent),
+        radial-gradient(4px 4px at 55% 35%, rgba(245,158,11,0.5), transparent),
+        radial-gradient(2px 2px at 90% 90%, rgba(167,139,250,0.5), transparent);
 }
 @keyframes particleFloat {
-    0% { transform: translateY(0) rotate(0deg); opacity: 0.3; }
-    50% { opacity: 0.8; }
-    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0.3; }
+    0% { transform: translateY(0) rotate(0deg); opacity: 0.4; }
+    50% { opacity: 0.9; }
+    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0.4; }
 }
 
 /* ── Title gradient + glow ── */
