@@ -1,7 +1,10 @@
-.PHONY: run install add lock clean
+.PHONY: run ruleta install add lock clean
 
 run:
 	uv run python -m streamlit run app.py
+
+ruleta:
+	uv run python -m streamlit run ruleta.py
 
 install:
 	uv sync
