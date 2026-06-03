@@ -1245,7 +1245,7 @@ def talleres_html():
                     <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem;">
                         <div style="padding:1rem;border-radius:1rem;background:linear-gradient(135deg,#f59e0b,#ef4444);box-shadow:0 10px 15px -3px rgba(0,0,0,0.3);">🤖</div>
                         <div>
-                            <span style="font-size:0.875rem;font-weight:700;color:#fbbf24;">Taller #3 · Virtual</span>
+                            <span style="font-size:0.875rem;font-weight:700;color:#fbbf24;">Taller #3 · Híbrido</span>
                             <h3 style="font-size:1.25rem;font-weight:700;color:white;margin-top:0.25rem;">Cómo pasar de la Automatización Robótica tradicional a Procesos Inteligentes y Autónomos</h3>
                         </div>
                     </div>
@@ -1254,7 +1254,8 @@ def talleres_html():
                             <div style="display:flex;align-items:center;gap:0.5rem;"><span style="font-size:0.875rem;color:#94a3b8;">Aliado:</span><span style="font-size:0.875rem;font-weight:600;color:white;">UIPATH</span></div>
                             <div style="display:flex;align-items:center;gap:0.5rem;"><span style="font-size:0.875rem;">📅</span><span style="font-size:0.875rem;color:#94a3b8;">Miércoles 3 de junio de 2026</span></div>
                             <div style="display:flex;align-items:center;gap:0.5rem;"><span style="font-size:0.875rem;">⏰</span><span style="font-size:0.875rem;color:#94a3b8;">10:30 a.m. – 12:00 p.m.</span></div>
-                            <div style="display:flex;align-items:center;gap:0.5rem;"><span style="font-size:0.875rem;">🖥</span><span style="font-size:0.875rem;color:#94a3b8;">Formato Virtual</span></div>
+                            <div style="display:flex;align-items:center;gap:0.5rem;"><span style="font-size:0.875rem;">🌐</span><span style="font-size:0.875rem;color:#94a3b8;">Virtual (Teams)</span></div>
+                            <div style="display:flex;align-items:center;gap:0.5rem;"><span style="font-size:0.875rem;">🏢</span><span style="font-size:0.875rem;color:#94a3b8;">Presencial (Salón principal)</span></div>
                         </div>
                         <div style="padding:1rem;background:rgba(255,255,255,0.05);border-radius:0.75rem;border:1px solid rgba(255,255,255,0.1);">
                             <h4 style="font-size:0.875rem;font-weight:600;color:#cbd5e1;margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem;">➡ Contenido de la charla</h4>
