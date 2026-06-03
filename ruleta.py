@@ -11,12 +11,86 @@ st.set_page_config(
 
 st.markdown("""
 <style>
+/* ── Base ── */
 .stApp {
-    background: linear-gradient(135deg, #0f0a1a, #1a0a2e, #0f0a1a);
+    background: linear-gradient(135deg, #0f0a1a, #1a0a2e, #0f0a1a) !important;
     color: white;
 }
 h1, h2, h3 { text-align: center; }
+
+/* ── Floating particles ── */
+#particles {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+#particles::before {
+    content: '';
+    position: absolute;
+    width: 100%; height: 100%;
+    animation: particleFloat 30s infinite linear;
+    background:
+        radial-gradient(3px 3px at 10% 20%, rgba(167,139,250,0.6), transparent),
+        radial-gradient(4px 4px at 25% 55%, rgba(34,211,238,0.5), transparent),
+        radial-gradient(2px 2px at 40% 10%, rgba(245,158,11,0.5), transparent),
+        radial-gradient(3px 3px at 55% 70%, rgba(34,211,238,0.6), transparent),
+        radial-gradient(5px 5px at 70% 30%, rgba(167,139,250,0.4), transparent),
+        radial-gradient(2px 2px at 85% 85%, rgba(239,68,68,0.5), transparent),
+        radial-gradient(4px 4px at 15% 90%, rgba(245,158,11,0.4), transparent),
+        radial-gradient(3px 3px at 90% 10%, rgba(34,211,238,0.5), transparent),
+        radial-gradient(2px 2px at 50% 40%, rgba(167,139,250,0.5), transparent),
+        radial-gradient(3px 3px at 30% 80%, rgba(239,68,68,0.4), transparent);
+}
+#particles::after {
+    content: '';
+    position: absolute;
+    width: 100%; height: 100%;
+    animation: particleFloat 40s infinite linear reverse;
+    background:
+        radial-gradient(2px 2px at 5% 45%, rgba(245,158,11,0.5), transparent),
+        radial-gradient(4px 4px at 45% 15%, rgba(167,139,250,0.4), transparent),
+        radial-gradient(3px 3px at 65% 60%, rgba(34,211,238,0.5), transparent),
+        radial-gradient(2px 2px at 80% 5%, rgba(239,68,68,0.4), transparent),
+        radial-gradient(3px 3px at 95% 40%, rgba(167,139,250,0.5), transparent),
+        radial-gradient(4px 4px at 20% 30%, rgba(245,158,11,0.4), transparent),
+        radial-gradient(2px 2px at 60% 90%, rgba(34,211,238,0.5), transparent),
+        radial-gradient(3px 3px at 35% 50%, rgba(239,68,68,0.3), transparent);
+}
+@keyframes particleFloat {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0.3; }
+    50% { opacity: 0.8; }
+    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0.3; }
+}
+
+/* ── Title gradient + glow ── */
+.title-wrapper {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.title-glow {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #f59e0b, #ef4444, #a78bfa, #22d3ee);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 6s ease infinite;
+    filter: drop-shadow(0 0 30px rgba(245,158,11,0.3));
+}
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ── Shimmer button ── */
 .stButton button {
+    position: relative !important;
+    overflow: hidden !important;
     background: linear-gradient(135deg, #f59e0b, #ef4444) !important;
     border: none !important;
     border-radius: 2rem !important;
@@ -27,10 +101,25 @@ h1, h2, h3 { text-align: center; }
     box-shadow: 0 0 30px rgba(245,158,11,0.4) !important;
     transition: all 0.3s !important;
 }
+.stButton button::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 60%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+    transform: skewX(-20deg);
+    animation: shimmer 3s infinite ease-in-out;
+}
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 150%; }
+}
 .stButton button:hover {
     transform: scale(1.05) !important;
     box-shadow: 0 0 50px rgba(245,158,11,0.7) !important;
 }
+
+/* ── Winner card ── */
 .ganador-card {
     text-align: center;
     padding: 2rem;
@@ -38,8 +127,18 @@ h1, h2, h3 { text-align: center; }
     border: 2px solid rgba(34,211,238,0.3);
     border-radius: 1.5rem;
     margin-top: 1.5rem;
+    animation: slideUp 0.6s ease-out, borderPulse 2s ease-in-out infinite 0.6s;
+}
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes borderPulse {
+    0%, 100% { border-color: rgba(34,211,238,0.3); box-shadow: 0 0 20px rgba(34,211,238,0.1); }
+    50% { border-color: rgba(34,211,238,0.7); box-shadow: 0 0 40px rgba(34,211,238,0.3); }
 }
 </style>
+<div id="particles"></div>
 """, unsafe_allow_html=True)
 
 
@@ -87,7 +186,10 @@ if not st.session_state.columna_existe:
 
 
 # ── UI ──
-st.title("🎰 Ruleta de Sorteo")
+st.markdown(
+    '<h1 class="title-wrapper"><span class="title-glow">🎰 Ruleta de Sorteo</span></h1>',
+    unsafe_allow_html=True,
+)
 st.markdown(
     '<p style="text-align:center;color:#94a3b8;max-width:36rem;margin:0 auto 2rem;">'
     "Seleccionaremos un ganador al azar de los participantes que opinaron</p>",
