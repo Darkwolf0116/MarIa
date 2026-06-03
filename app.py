@@ -408,14 +408,15 @@ def hero_html():
 
 
 def proposito_html():
+    _maria = maria_logo_html("2rem")
     return f"""
     <section id="proposito" style="padding:6rem 0;position:relative;overflow:hidden;">
         <div style="position:absolute;inset:0;background:linear-gradient(to bottom,#0f0a1a,#140d25,#0f0a1a);"></div>
         <div class="max-w-7xl" style="position:relative;z-index:10;">
             <div style="text-align:center;margin-bottom:4rem;">
                 <img src="{LOGO}" alt="MEN" style="height:4rem;margin:0 auto 1.5rem;opacity:0.8;" />
-                <span style="display:inline-block;padding:0.375rem 1rem;background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.3);border-radius:9999px;font-size:0.875rem;font-weight:500;color:#c4b5fd;margin-bottom:1rem;">IA LAB MEN</span>
-                <h2 style="font-size:2rem;font-weight:900;color:white;margin-bottom:1.5rem;" class="section-title">El propósito fundacional del <span class="text-gradient-violet">IA LAB MEN</span></h2>
+                <span style="display:inline-block;padding:0.375rem 1rem;background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.3);border-radius:9999px;font-size:0.875rem;font-weight:500;color:#c4b5fd;margin-bottom:1rem;">Parche de MarIA</span>
+                <h2 style="font-size:2rem;font-weight:900;color:white;margin-bottom:1.5rem;" class="section-title">El propósito fundacional del parche de {_maria}</h2>
                 <p style="font-size:1.125rem;color:#94a3b8;max-width:42rem;margin:0 auto;">Tres pilares que guían nuestra estrategia de transformación digital</p>
             </div>
             <div style="display:grid;grid-template-columns:1fr;gap:1.5rem;margin-bottom:4rem;" class="pilar-grid">
